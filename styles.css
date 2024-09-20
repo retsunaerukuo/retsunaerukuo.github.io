@@ -38,11 +38,21 @@ button {
     height: 0px; /* Initially hidden */
     overflow: hidden;
     transition: height 2s ease;
+    position: relative;
 }
 
 img {
     max-width: 100%;
     height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+img.show {
+    opacity: 1;
 }
 
 .dark-mode {
