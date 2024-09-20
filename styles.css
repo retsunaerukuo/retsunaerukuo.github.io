@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 7px 15px;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.image-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-reveal {
+    width: 300px;
+    height: 0px; /* Initially hidden */
+    overflow: hidden;
+    transition: height 2s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .container {
+    background-color: #444;
+    color: white;
+    border-color: #555;
+}
